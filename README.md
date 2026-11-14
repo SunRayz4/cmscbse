@@ -1,146 +1,182 @@
-CMS CBSE – School Website
+<div align="center">
 
-A Modern Full-Stack School Website Developed by Sunrayz Technology
+# 🎓 CMS CBSE
 
-CMS CBSE is a modern, dynamic, and responsive school website developed to provide a complete digital platform for CBSE educational institutions. The application is built using Next.js for both frontend and backend development, with Microsoft SQL Server as the database.
+### A Modern Full-Stack School Website for CBSE Institutions
 
-The website helps educational institutions establish their online presence, share important information, publish announcements, and manage school-related content efficiently.
+*Share information, publish announcements and manage school content, all from one digital platform.*
 
-🚀 Project Overview
+<br />
 
-CMS CBSE is a full-stack school website designed to simplify digital communication and website content management for educational institutions.
+[Features](#-features) •
+[Tech Stack](#-tech-stack) •
+[Getting Started](#-getting-started) •
+[Database](#-database) •
+[Contact](#-developed-by)
 
-It provides a centralized platform to display school information, academic details, announcements, events, and other important institutional updates.
+</div>
 
-✨ Key Features
-Modern and responsive school website
-Dynamic website content management
-School profile and institutional information
-Academic and educational information
-News and announcements
-Events and school activities
-Student and parent information sections
-Backend API integration
-Microsoft SQL Server database connectivity
-Administrative content management features (where implemented)
-User-friendly interface
-Mobile, tablet, and desktop compatibility
-🛠️ Technology Stack
-Technology	Purpose
-Next.js	Frontend Development
-Next.js API Routes / Route Handlers	Backend Development
-React.js	User Interface Development
-JavaScript / TypeScript	Application Programming
-Microsoft SQL Server	Database Management
-Node.js	Runtime Environment
-Git & GitHub	Version Control
-📂 Project Structure
-text
+---
+
+## 📖 Overview
+
+**CMS CBSE** is a modern, dynamic and responsive website built for CBSE schools. It gives educational institutions a complete online presence and a centralized place to display school information, academic details, announcements, events and other institutional updates.
+
+The entire application, frontend and backend, is built with **Next.js**, backed by **Microsoft SQL Server**.
+
+---
+
+## ✨ Features
+
+| | Feature | Description |
+|---|---|---|
+| 🏫 | **School Profile** | Institutional information and school details |
+| 📚 | **Academics** | Academic and educational information |
+| 📰 | **News & Announcements** | Publish and display latest updates |
+| 🎉 | **Events & Activities** | Showcase school events and activities |
+| 👨‍👩‍👧 | **Student & Parent Sections** | Dedicated information for students and parents |
+| ⚙️ | **Content Management** | Dynamic content with admin management features *(where implemented)* |
+| 🔌 | **Backend API** | Built-in API integration via Next.js Route Handlers |
+| 🗄️ | **Database Connectivity** | Microsoft SQL Server integration |
+| 📱 | **Fully Responsive** | Works on mobile, tablet and desktop |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Frontend** | Next.js, React.js |
+| **Backend** | Next.js API Routes / Route Handlers |
+| **Language** | JavaScript / TypeScript |
+| **Database** | Microsoft SQL Server |
+| **Runtime** | Node.js |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 📂 Project Structure
+
+```text
 CMSCBSE/
-│
-├── public/                 # Static files, images and assets
-│
+├── public/            # Static files, images and assets
 ├── src/
-│   ├── app/                # Next.js application routes
-│   ├── components/         # Reusable UI components
-│   ├── lib/                # Database and utility functions
+│   ├── app/           # Next.js routes and API handlers
+│   ├── components/    # Reusable UI components
+│   ├── lib/           # Database and utility functions
 │   └── ...
-│
-├── package.json            # Project dependencies
-├── next.config.js          # Next.js configuration
-├── .env.local              # Environment variables
-└── README.md               # Project documentation
+├── .env.local         # Environment variables (never commit)
+├── next.config.js     # Next.js configuration
+├── package.json       # Dependencies and scripts
+└── README.md
+```
 
+> **Note:** The actual folder structure may vary depending on the project configuration.
 
-Note: The actual folder structure may vary depending on the project configuration.
+---
 
-⚙️ Installation & Setup
-1. Clone the Repository
-bash
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [Git](https://git-scm.com/)
+- A running **Microsoft SQL Server** instance
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
 git clone https://github.com/SunRayz4/cmscbse.git
-
-2. Navigate to Project Directory
-bash
 cd cmscbse
+```
 
-3. Install Dependencies
-bash
+**2. Install dependencies**
+
+```bash
 npm install
+```
 
-4. Configure Environment Variables
+**3. Configure environment variables**
 
-Create a .env.local file in the project root directory and configure your Microsoft SQL Server connection.
+Create a `.env.local` file in the project root:
 
-Example:
-
-env
+```env
 DB_SERVER=your_server_name
 DB_DATABASE=your_database_name
 DB_USER=your_username
 DB_PASSWORD=your_password
 DB_PORT=1433
+```
 
+> ⚠️ **Important:** Replace the example values with your actual credentials. **Never commit `.env.local` or database credentials to GitHub.**
 
-Important: Replace the example values with your actual database credentials. Never upload .env.local or database credentials to GitHub.
+**4. Run the development server**
 
-5. Start Development Server
-bash
+```bash
 npm run dev
+```
 
+Open **http://localhost:3000** in your browser.
 
-Open your browser:
+### Available Scripts
 
-text
-http://localhost:3000
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Create an optimized production build |
+| `npm start` | Start the production server |
 
-6. Build for Production
-bash
-npm run build
+---
 
-7. Start Production Server
-bash
-npm start
+## 🗄️ Database
 
-🗄️ Database
+The application uses **Microsoft SQL Server** to store and manage:
 
-The application uses Microsoft SQL Server for database management and storage.
+- School details and institutional information
+- Website content
+- News and announcements
+- Events and activities
+- Administrative information
 
-The database supports school website information and application data, including:
+---
 
-School details and institutional information
-Website content
-News and announcements
-Events and activities
-Administrative information
-🌐 GitHub Repository
+## 🏢 Developed By
 
-Repository: CMS CBSE – GitHub
+<div align="center">
 
-🏢 Developed By
-Sunrayz Technology
+**Sunrayz Technology**
 
-Website: https://sunrayztechnology.com/
+*Modern digital solutions and web development services.*
 
-Sunrayz Technology specializes in delivering modern digital solutions and web development services.
+🌐 [sunrayztechnology.com](https://sunrayztechnology.com/)
 
-CMS CBSE is developed by Sunrayz Technology to provide educational institutions with a modern, reliable, and user-friendly digital platform.
+</div>
 
-📋 Project Information
-Details	Information
-Project Name	CMS CBSE – School Website
-Project Type	Full-Stack Web Application
-Industry	Education
-Frontend	Next.js
-Backend	Next.js
-Database	Microsoft SQL Server
-Developer	Sunrayz Technology
-Website	https://sunrayztechnology.com/
-📄 Project Usage & Copyright
+---
+
+## 📋 Project Information
+
+| | |
+|---|---|
+| **Project Name** | CMS CBSE – School Website |
+| **Type** | Full-Stack Web Application |
+| **Industry** | Education |
+| **Frontend / Backend** | Next.js |
+| **Database** | Microsoft SQL Server |
+| **Developer** | Sunrayz Technology |
+
+---
+
+## 📄 License & Copyright
 
 This project is developed for school website management and institutional use.
 
-Developed by Sunrayz Technology.
-
 © Sunrayz Technology. All Rights Reserved.
 
-Designed & Developed with ❤️ by Sunrayz Technology
+<div align="center">
+
+Designed & developed with ❤️ by **Sunrayz Technology**
+
+</div>
