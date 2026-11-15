@@ -1,4 +1,7 @@
 import Image from "next/image";
+// import Image from "next/image";
+import cms01 from "../app/images/CMS01.jpg";
+import cms02 from "../app/images/CM202.jpg";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -49,7 +52,7 @@ export function HomePage() {
       <section className="hero">
         <Image
           className="hero-image"
-          src={photo("photo-1580582932707-520aed937b7b", 1800)}
+       src={cms01}
           alt=""
           fill
           preload
@@ -107,13 +110,14 @@ export function HomePage() {
       </section>
       <section className="welcome section-pad">
         <div className="welcome-photo">
-          <Image
-            // src={photo("photo-1523050854058-8df90110c9f1", 1000)}
-            src={`https://t3.ftcdn.net/jpg/09/28/53/10/360_F_928531048_45ay4GSNYJuTLIHKtuR255O9ndjsHg5x.jpg`}
-            alt="Students gathered in a bright school courtyard"
-            fill
-            sizes="(max-width: 800px) 100vw, 50vw"
-          />
+           <Image
+    src={cms01}
+    alt="Students gathered in a bright school courtyard"
+    fill
+    sizes="(max-width: 800px) 100vw, 50vw"
+    style={{ objectFit: "cover" }}
+    priority
+  />
           <div className="photo-seal">
             <span>32</span>
             <small>
@@ -290,12 +294,14 @@ export function HomePage() {
         <div className="news-grid">
           <article className="news-feature">
             <div className="news-image">
-              <Image
-                src={photo("photo-1509062522246-3755977927d7", 900)}
-                alt="Students taking part in a classroom activity"
-                fill
-                sizes="(max-width: 700px) 100vw, 50vw"
-              />
+             <Image
+    src={cms02}
+    alt="Students gathered in a bright school courtyard"
+    fill
+    sizes="(max-width: 800px) 100vw, 50vw"
+    style={{ objectFit: "cover" }}
+    priority
+  />
             </div>
             <span className="news-tag">ADMISSIONS · 2027–28</span>
             <h3>Applications are open for the new academic session.</h3>
