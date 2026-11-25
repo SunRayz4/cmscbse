@@ -2,6 +2,7 @@ import { SchoolDetailPage } from '@/components/school-detail-page'
 import { SiteShell } from '@/components/school-site'
 import { createSchoolPageMetadata } from '@/lib/seo'
 import type { SchoolPageData } from '@/lib/school-page-types'
+import { Building } from '@/lib/school-data'
 
 const canonical = '/our-school/principal-message'
 const description = 'Read the principal’s message about student learning, wellbeing and school life at CMS School, Nigdi, Pune.'
@@ -10,7 +11,7 @@ const page: SchoolPageData = {
   title: "Principal's Message",
   group: 'Our School',
   intro: 'Knowledge in mind, kindness in heart, courage to lead.',
-  image: 'photo-1577896851231-70ef18881754',
+  image: Building,
   body: 'Our aim is simple: when your child leaves CMS School, they should leave with knowledge in mind, kindness in heart and courage to lead the world. We believe every child deserves to be known, encouraged and challenged. Our teachers create a safe environment where questions are welcomed and effort is celebrated, preparing students not only for examinations but for life.',
 }
 

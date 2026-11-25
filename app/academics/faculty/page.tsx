@@ -10,7 +10,7 @@ const page: SchoolPageData = {
   title: 'Faculty & Staff',
   group: 'Learning',
   intro: 'Dedicated educators who help every learner find their stride.',
-  image: 'photo-1524178232363-1fb2b075b655',
+  image: '',
   body: 'Our experienced teachers pair subject expertise with a personal approach. Through collaborative planning, ongoing professional learning and close partnership with families, staff help students feel supported, challenged and ready to grow.',
 }
 

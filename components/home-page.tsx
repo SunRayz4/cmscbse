@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import Image from "next/image";
 import cms01 from "../app/images/CMS01.jpg";
 import cms02 from "../app/images/CM202.jpg";
 import Link from "next/link";
@@ -52,7 +51,7 @@ export function HomePage() {
       <section className="hero">
         <Image
           className="hero-image"
-       src={cms01}
+          src={cms01}
           alt=""
           fill
           preload
@@ -110,14 +109,14 @@ export function HomePage() {
       </section>
       <section className="welcome section-pad">
         <div className="welcome-photo">
-           <Image
-    src={cms01}
-    alt="Students gathered in a bright school courtyard"
-    fill
-    sizes="(max-width: 800px) 100vw, 50vw"
-    style={{ objectFit: "cover" }}
-    priority
-  />
+          <Image
+            src={cms01}
+            alt="Students gathered in a bright school courtyard"
+            fill
+            sizes="(max-width: 800px) 100vw, 50vw"
+            style={{ objectFit: "cover" }}
+            priority
+          />
           <div className="photo-seal">
             <span>32</span>
             <small>
@@ -294,14 +293,14 @@ export function HomePage() {
         <div className="news-grid">
           <article className="news-feature">
             <div className="news-image">
-             <Image
-    src={cms02}
-    alt="Students gathered in a bright school courtyard"
-    fill
-    sizes="(max-width: 800px) 100vw, 50vw"
-    style={{ objectFit: "cover" }}
-    priority
-  />
+              <Image
+                src={cms02}
+                alt="Students gathered in a bright school courtyard"
+                fill
+                sizes="(max-width: 800px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
+                priority
+              />
             </div>
             <span className="news-tag">ADMISSIONS · 2027–28</span>
             <h3>Applications are open for the new academic session.</h3>
@@ -350,10 +349,10 @@ export function HomePage() {
             <Link
               href="/campus/gallery"
               className={`gallery-tile tile-${index + 1}`}
-              key={id}
+              key={label}
             >
               <Image
-                src={photo(id, 700)}
+                src={typeof id === "string" ? photo(id, 700) : id}
                 alt={label}
                 fill
                 sizes="(max-width: 700px) 50vw, 25vw"

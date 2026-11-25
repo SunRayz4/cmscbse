@@ -5,11 +5,11 @@ import { useEffect, useRef, useState } from 'react'
 import { ArrowUpRight, ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { images, photo } from '@/lib/school-data'
 import { SectionTitle } from '@/components/school-ui'
-
+import { curious } from '@/lib/school-data'
 export function SchoolGallery() {
   const [active, setActive] = useState<number | null>(null)
   return <>
-    <section className="gallery-page section-pad"><SectionTitle label="LIFE AT CMS" title="A glimpse into our school days" copy="Learning, creating, playing and growing together."/><div className="gallery-grid">{images.map(([label, id], index) => <button key={id} className="gallery-button" onClick={() => setActive(index)} aria-label={`View photo: ${label}`}><Image src={photo(id, 900)} alt={label} fill sizes="(max-width: 700px) 50vw, 33vw"/><span>{label}<ArrowUpRight size={15}/></span></button>)}</div></section>
+    <section className="gallery-page section-pad"><SectionTitle label="LIFE AT CMS" title="A glimpse into our school days" copy="Learning, creating, playing and growing together."/><div className="gallery-grid">{images.map(([label, id], index) => <button key={label} className="gallery-button" onClick={() => setActive(index)} aria-label={`View photo: ${label}`}><Image src={photo(id, 900)} alt={label} fill sizes="(max-width: 700px) 50vw, 33vw"/><span>{label}<ArrowUpRight size={15}/></span></button>)}</div></section>
     <GalleryLightbox active={active} setActive={setActive}/>
   </>
 }

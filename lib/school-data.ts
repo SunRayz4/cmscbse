@@ -1,3 +1,10 @@
+import type { StaticImageData } from "next/image";
+import curious from "../app/images/curious.png";
+import Thoughtful from "../app/images/Thoughtful.png";
+import Building from "../app/images/Building.png";
+import StuentLife from "../app/images/studentlife.png";
+
+export { curious,Thoughtful ,Building};
 export const highlights = [
   { title: 'Rigorous Academics, Made Simple', text: 'NCERT + Concept-based learning. Daily doubt sessions, weekly tests and personal mentoring. No rote learning, only understanding.', icon: '01' },
   { title: 'Cutting-Edge Labs & Innovation', text: 'Robotics & AI Lab, Physics-Chemistry-Biology Labs, Computer Lab & Digital Library. Children learn by doing.', icon: '02' },
@@ -13,13 +20,16 @@ export const stages = [
   ['Senior Secondary', 'Classes XI – XII', 'Science (PCM/PCB), Commerce and Humanities, with IIT-JEE, NEET, CUET and CA Foundation preparation integrated into school hours.'],
 ]
 
-export const images = [
+export const images: [string, string | StaticImageData][] = [
   ['Learning together', 'photo-1503676260728-1c00da094a0b'],
-  ['Curious minds', 'photo-1529390079861-591de354faf5'],
+  ['Curious minds', curious],
   ['A welcoming campus', 'photo-1580582932707-520aed937b7b'],
-  ['Creative discovery', 'photo-1509062522246-3755977927d7'],
-  ['Student life', 'photo-1523050854058-8df90110c9f1'],
-  ['Bright beginnings', 'photo-1577896851231-70ef18881754'],
+  ['Creative discovery', Thoughtful],
+  ['Student life', StuentLife],
+  ['Bright beginnings', Building],
 ]
 
-export const photo = (id: string, width = 1200) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`
+export const photo = (id: string | StaticImageData, width = 1200): string =>
+  typeof id === 'string'
+    ? `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`
+    : id.src // local static import
